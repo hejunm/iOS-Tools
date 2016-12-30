@@ -7,7 +7,7 @@
 
 @implementation NSObject (HJMTools)
 
-+ (void)HJM_swizzleWithClass:(Class)processedClass originalSelector:(SEL)originSelector swizzleSelector:(SEL)swizzlSelector{
++ (void)hjm_swizzleWithClass:(Class)processedClass originalSelector:(SEL)originSelector swizzleSelector:(SEL)swizzlSelector{
     
     Method originMethod = class_getInstanceMethod(processedClass, originSelector);
     Method swizzleMethod = class_getInstanceMethod(processedClass, swizzlSelector);
