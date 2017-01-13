@@ -1,11 +1,11 @@
 //
-//  NSObject+HJMTools.m
+//  HJMSwizzleTools.m
 //
 
-#import "NSObject+HJMTools.h"
+#import "HJMSwizzleTools.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (HJMTools)
+@implementation HJMSwizzleTools:NSObject
 
 + (void)hjm_swizzleWithClass:(Class)processedClass originalSelector:(SEL)originSelector swizzleSelector:(SEL)swizzlSelector{
     
