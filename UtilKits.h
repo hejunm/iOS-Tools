@@ -18,4 +18,8 @@
 #import "UIColor+FlatUI.h"//颜色分类 应用中的主要颜色
 #import "NSString+firstChar.h"//字符串首字母，用于索引
 
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
 #endif /* UtilKits_h */
