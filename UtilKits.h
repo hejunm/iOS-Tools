@@ -21,5 +21,8 @@
 
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-
+#define HJMMethodNotImplemented() \
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException \
+                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass.", NSStringFromSelector(_cmd)] \
+                                 userInfo:nil]
 #endif /* UtilKits_h */
